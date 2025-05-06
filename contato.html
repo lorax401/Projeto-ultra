@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Ultra Home Design</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #000000;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #e8eaec;
+    }
+    .contact-info {
+      margin-bottom: 20px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+    button {
+      padding: 14px;
+      font-size: 18px;
+      background-color: #002244;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #004488;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #002244;
+      color: white;
+      margin-top: 40px;
+    }
+    header img{
+      height: 60px;
+      margin-right: 15px;
+    }
+    img{
+      overflow-clip-margin: content-box;
+      overflow: clip;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header {
+        padding: 15px;
+      }
+      section {
+        margin: 20px 15px;
+        padding: 15px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      input, textarea {
+        font-size: 16px;
+      }
+      button {
+        font-size: 16px;
+        padding: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 10px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      section {
+        padding: 10px;
+      }
+      input, textarea {
+        font-size: 14px;
+      }
+      button {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  
+  <img src="img/fg.jpg" alt="logo ultrahomedesign">
+  <div>
+  <h1>Ultra Home Design</h1>
+  <p>Transformamos sua casa em um verdadeiro lar!</p>
+</div>
+</header>
+
+<section>
+  <h2>Fale Conosco</h2>
+  <div class="contact-info">
+    <p><strong>Telefone & WhatsApp:</strong>+258846428477</p>
+    <p><strong>E-mail:</strong>juliolorax1@gmail.com</p>
+    <p><strong>Endereço:</strong> Rua do hospital, nº 104, Bairro Magoanine c – Maputo </p>
+    <p><strong>Horário de Atendimento:</strong> Segunda a Sexta: 8h às 17h | Sábado: 8h às 13h</p>
+  </div>
+
+  <form action="juliolorax@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="nome" placeholder="Seu Nome" required>
+    <input type="tel" name="telefone" placeholder="Seu Telefone/WhatsApp" required>
+    <input type="email" name="email" placeholder="Seu E-mail" required>
+    <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+    <button type="submit">Enviar Mensagem</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Ultra Home Design
+</footer>
+
+</body>
+</html>

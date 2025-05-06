@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Depoimentos | Ultra Home Design</title>
+
+  <!-- Link do Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #001f3f;
+      color: white;
+    }
+    header {
+      background-color: #ff8000;
+      color: #001f3f;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .swiper {
+      width: 100%;
+      max-width: 800px;
+      padding: 50px 0;
+      margin: 0 auto;
+    }
+    .swiper-slide {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      color: #333;
+    }
+    .swiper-slide img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .swiper-slide p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .swiper-slide h3 {
+      font-size: 20px;
+      color: #001f3f;
+      margin: 0;
+    }
+    .btn-depoimento {
+      display: block;
+      margin: 30px auto 50px;
+      padding: 12px 30px;
+      background-color: #ff8000;
+      color: #001f3f;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn-depoimento:hover {
+      background-color: #ffa940;
+    }
+    @media (max-width: 768px) {
+      .swiper-slide p {
+        font-size: 16px;
+      }
+      .swiper-slide h3 {
+        font-size: 18px;
+      }
+      .btn-depoimento {
+        font-size: 16px;
+        padding: 10px 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>O que nossos clientes dizem</h1>
+</header>
+
+<!-- Swiper Container -->
+<div class="swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="" alt="">
+      <p></p>
+      <h3></h3>
+    </div>
+
+    <div class="swiper-slide">
+      <img src="" alt="">
+      <p></p>
+      <h3></h3>
+    </div>
+
+    <div class="swiper-slide">
+      <img src="" alt="">
+      <p></p>
+      <h3></h3>
+    </div>
+
+    <div class="swiper-slide">
+      <img src="" alt="">
+      <p></p>
+      <h3></h3>
+    </div>
+
+  </div>
+
+  <!-- Botões -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+  <!-- Paginação -->
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- Botão para deixar novo depoimento -->
+<a href="mailto:contato@ultrahomedesign.com?subject=Quero deixar meu depoimento" class="btn-depoimento">
+  Quero deixar meu depoimento
+</a>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+</body>
+</html>
+

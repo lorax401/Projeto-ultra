@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços | Ultra Home Design</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #c9a16d;
+    }
+    header {
+      background-color: #000000;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 0;
+      font-size: 16px;
+    }
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #002244;
+      margin-bottom: 20px;
+    }
+    .service {
+      margin-bottom: 30px;
+      padding: 15px;
+      border-bottom: 1px solid #ccc;
+    }
+    .service:last-child {
+      border-bottom: none;
+    }
+    .service h3 {
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+    }
+    .service h3 img {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+    .service p {
+      font-size: 16px;
+      color: #333;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+    .btn-orcamento {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f30404;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .btn-orcamento:hover {
+      background-color: #000000;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      section {
+        margin: 20px;
+        padding: 15px;
+      }
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header img {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      .service p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="img/fg.jpg" alt="Logo Ultra Home Design">
+  <div>
+    <h1>Ultra Home Design</h1>
+    <p>Especialistas em transformar espaços!</p>
+  </div>
+</header>
+
+<section>
+  <h2>Nossos Serviços</h2>
+
+  <div class="service">
+    <h3><img src="img/G.jpg" alt="Teto Falso"> Montagem de Teto Falso</h3>
+    <p>Instalação de tetos falsos com acabamento perfeito, melhorando a estética e o isolamento térmico/acústico do seu ambiente.</p>
+    <a class="btn-orcamento" href="mailto:contato@ultrahomedesign.com?subject=Orçamento Teto Falso">Solicitar Orçamento</a>
+  </div>
+
+  <div class="service">
+    <h3><img src="img/luz.png" alt="Eletricidade"> Eletricidade</h3>
+    <p>Serviços elétricos completos: instalações, manutenções, reparos e projetos personalizados para residências e empresas.</p>
+    <a class="btn-orcamento" href="mailto:contato@ultrahomedesign.com?subject=Orçamento Eletricidade">Solicitar Orçamento</a>
+  </div>
+
+  <div class="service">
+    <h3><img src="img/jardim.png" alt="Jardinagem"> Jardinagem</h3>
+    <p>Criação, manutenção e revitalização de jardins. Deixe seu espaço verde mais bonito, saudável e bem cuidado.</p>
+    <a class="btn-orcamento" href="mailto:contato@ultrahomedesign.com?subject=Orçamento Jardinagem">Solicitar Orçamento</a>
+  </div>
+
+  <div class="service">
+    <h3><img src="img/limpesa.png" alt="Limpezas"> Limpezas</h3>
+    <p>Serviços de limpeza pós-obra, residencial e comercial, garantindo ambientes impecáveis e prontos para uso.</p>
+    <a class="btn-orcamento" href="mailto:juliolorax@gmail.com subject=Orçamento Limpezas">Solicitar Orçamento</a>
+  </div>
+</section>
+
+</body>
+</html>
+
